@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F4953461AA0E029006196E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4953451AA0E029006196E4 /* main.m */; };
+		5F4953491AA0E029006196E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4953481AA0E029006196E4 /* AppDelegate.m */; };
+		5F49534F1AA0E029006196E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F49534D1AA0E029006196E4 /* Main.storyboard */; };
+		5F4953511AA0E029006196E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F4953501AA0E029006196E4 /* Images.xcassets */; };
+		5F4953541AA0E029006196E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F4953521AA0E029006196E4 /* LaunchScreen.xib */; };
+		5F4953601AA0E029006196E4 /* NavCodeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F49535F1AA0E029006196E4 /* NavCodeAppTests.m */; };
+		5F49536B1AA0E5B9006196E4 /* secondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F49536A1AA0E5B9006196E4 /* secondViewController.m */; };
+		5F49536E1AA0E61D006196E4 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F49536D1AA0E61D006196E4 /* ThirdViewController.m */; };
+		5F4953711AA0E651006196E4 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4953701AA0E651006196E4 /* FourthViewController.m */; };
+		5F4953741AA0E66B006196E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4953731AA0E66B006196E4 /* ViewController.m */; };
+		5F4953771AA0E6A2006196E4 /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4953761AA0E6A2006196E4 /* FifthViewController.m */; };
+		5F49537A1AA0E6C8006196E4 /* SixthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4953791AA0E6C8006196E4 /* SixthViewController.m */; };
+		5F49537D1AA117F8006196E4 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F49537B1AA117F8006196E4 /* 1.png */; };
+		5F49537E1AA117F8006196E4 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F49537C1AA117F8006196E4 /* 2.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F49535A1AA0E029006196E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F4953381AA0E029006196E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F49533F1AA0E029006196E4;
+			remoteInfo = NavCodeApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F4953401AA0E029006196E4 /* NavCodeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavCodeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4953441AA0E029006196E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F4953451AA0E029006196E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F4953471AA0E029006196E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5F4953481AA0E029006196E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5F49534E1AA0E029006196E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F4953501AA0E029006196E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5F4953531AA0E029006196E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5F4953591AA0E029006196E4 /* NavCodeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavCodeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F49535E1AA0E029006196E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F49535F1AA0E029006196E4 /* NavCodeAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavCodeAppTests.m; sourceTree = "<group>"; };
+		5F4953691AA0E5B9006196E4 /* secondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondViewController.h; sourceTree = "<group>"; };
+		5F49536A1AA0E5B9006196E4 /* secondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondViewController.m; sourceTree = "<group>"; };
+		5F49536C1AA0E61D006196E4 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		5F49536D1AA0E61D006196E4 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		5F49536F1AA0E651006196E4 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		5F4953701AA0E651006196E4 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		5F4953721AA0E66B006196E4 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5F4953731AA0E66B006196E4 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5F4953751AA0E6A2006196E4 /* FifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
+		5F4953761AA0E6A2006196E4 /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
+		5F4953781AA0E6C8006196E4 /* SixthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixthViewController.h; sourceTree = "<group>"; };
+		5F4953791AA0E6C8006196E4 /* SixthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixthViewController.m; sourceTree = "<group>"; };
+		5F49537B1AA117F8006196E4 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		5F49537C1AA117F8006196E4 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F49533D1AA0E029006196E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F4953561AA0E029006196E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F4953371AA0E029006196E4 = {
+			isa = PBXGroup;
+			children = (
+				5F4953421AA0E029006196E4 /* NavCodeApp */,
+				5F49535C1AA0E029006196E4 /* NavCodeAppTests */,
+				5F4953411AA0E029006196E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F4953411AA0E029006196E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F4953401AA0E029006196E4 /* NavCodeApp.app */,
+				5F4953591AA0E029006196E4 /* NavCodeAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F4953421AA0E029006196E4 /* NavCodeApp */ = {
+			isa = PBXGroup;
+			children = (
+				5F4953471AA0E029006196E4 /* AppDelegate.h */,
+				5F4953481AA0E029006196E4 /* AppDelegate.m */,
+				5F49534D1AA0E029006196E4 /* Main.storyboard */,
+				5F4953781AA0E6C8006196E4 /* SixthViewController.h */,
+				5F4953791AA0E6C8006196E4 /* SixthViewController.m */,
+				5F4953751AA0E6A2006196E4 /* FifthViewController.h */,
+				5F4953761AA0E6A2006196E4 /* FifthViewController.m */,
+				5F4953721AA0E66B006196E4 /* ViewController.h */,
+				5F4953731AA0E66B006196E4 /* ViewController.m */,
+				5F49536F1AA0E651006196E4 /* FourthViewController.h */,
+				5F4953701AA0E651006196E4 /* FourthViewController.m */,
+				5F49536C1AA0E61D006196E4 /* ThirdViewController.h */,
+				5F49536D1AA0E61D006196E4 /* ThirdViewController.m */,
+				5F4953691AA0E5B9006196E4 /* secondViewController.h */,
+				5F49536A1AA0E5B9006196E4 /* secondViewController.m */,
+				5F4953501AA0E029006196E4 /* Images.xcassets */,
+				5F4953521AA0E029006196E4 /* LaunchScreen.xib */,
+				5F4953431AA0E029006196E4 /* Supporting Files */,
+			);
+			path = NavCodeApp;
+			sourceTree = "<group>";
+		};
+		5F4953431AA0E029006196E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F49537B1AA117F8006196E4 /* 1.png */,
+				5F49537C1AA117F8006196E4 /* 2.png */,
+				5F4953441AA0E029006196E4 /* Info.plist */,
+				5F4953451AA0E029006196E4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F49535C1AA0E029006196E4 /* NavCodeAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F49535F1AA0E029006196E4 /* NavCodeAppTests.m */,
+				5F49535D1AA0E029006196E4 /* Supporting Files */,
+			);
+			path = NavCodeAppTests;
+			sourceTree = "<group>";
+		};
+		5F49535D1AA0E029006196E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F49535E1AA0E029006196E4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F49533F1AA0E029006196E4 /* NavCodeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F4953631AA0E029006196E4 /* Build configuration list for PBXNativeTarget "NavCodeApp" */;
+			buildPhases = (
+				5F49533C1AA0E029006196E4 /* Sources */,
+				5F49533D1AA0E029006196E4 /* Frameworks */,
+				5F49533E1AA0E029006196E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NavCodeApp;
+			productName = NavCodeApp;
+			productReference = 5F4953401AA0E029006196E4 /* NavCodeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F4953581AA0E029006196E4 /* NavCodeAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F4953661AA0E029006196E4 /* Build configuration list for PBXNativeTarget "NavCodeAppTests" */;
+			buildPhases = (
+				5F4953551AA0E029006196E4 /* Sources */,
+				5F4953561AA0E029006196E4 /* Frameworks */,
+				5F4953571AA0E029006196E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F49535B1AA0E029006196E4 /* PBXTargetDependency */,
+			);
+			name = NavCodeAppTests;
+			productName = NavCodeAppTests;
+			productReference = 5F4953591AA0E029006196E4 /* NavCodeAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F4953381AA0E029006196E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Benjamine Mutebi";
+				TargetAttributes = {
+					5F49533F1AA0E029006196E4 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					5F4953581AA0E029006196E4 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 5F49533F1AA0E029006196E4;
+					};
+				};
+			};
+			buildConfigurationList = 5F49533B1AA0E029006196E4 /* Build configuration list for PBXProject "NavCodeApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F4953371AA0E029006196E4;
+			productRefGroup = 5F4953411AA0E029006196E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F49533F1AA0E029006196E4 /* NavCodeApp */,
+				5F4953581AA0E029006196E4 /* NavCodeAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F49533E1AA0E029006196E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F49534F1AA0E029006196E4 /* Main.storyboard in Resources */,
+				5F49537D1AA117F8006196E4 /* 1.png in Resources */,
+				5F49537E1AA117F8006196E4 /* 2.png in Resources */,
+				5F4953541AA0E029006196E4 /* LaunchScreen.xib in Resources */,
+				5F4953511AA0E029006196E4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F4953571AA0E029006196E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F49533C1AA0E029006196E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F4953741AA0E66B006196E4 /* ViewController.m in Sources */,
+				5F4953711AA0E651006196E4 /* FourthViewController.m in Sources */,
+				5F49536B1AA0E5B9006196E4 /* secondViewController.m in Sources */,
+				5F49536E1AA0E61D006196E4 /* ThirdViewController.m in Sources */,
+				5F4953491AA0E029006196E4 /* AppDelegate.m in Sources */,
+				5F4953771AA0E6A2006196E4 /* FifthViewController.m in Sources */,
+				5F4953461AA0E029006196E4 /* main.m in Sources */,
+				5F49537A1AA0E6C8006196E4 /* SixthViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F4953551AA0E029006196E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F4953601AA0E029006196E4 /* NavCodeAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F49535B1AA0E029006196E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F49533F1AA0E029006196E4 /* NavCodeApp */;
+			targetProxy = 5F49535A1AA0E029006196E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F49534D1AA0E029006196E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F49534E1AA0E029006196E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F4953521AA0E029006196E4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F4953531AA0E029006196E4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F4953611AA0E029006196E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5F4953621AA0E029006196E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F4953641AA0E029006196E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NavCodeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5F4953651AA0E029006196E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NavCodeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5F4953671AA0E029006196E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NavCodeAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NavCodeApp.app/NavCodeApp";
+			};
+			name = Debug;
+		};
+		5F4953681AA0E029006196E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NavCodeAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NavCodeApp.app/NavCodeApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F49533B1AA0E029006196E4 /* Build configuration list for PBXProject "NavCodeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F4953611AA0E029006196E4 /* Debug */,
+				5F4953621AA0E029006196E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F4953631AA0E029006196E4 /* Build configuration list for PBXNativeTarget "NavCodeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F4953641AA0E029006196E4 /* Debug */,
+				5F4953651AA0E029006196E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5F4953661AA0E029006196E4 /* Build configuration list for PBXNativeTarget "NavCodeAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F4953671AA0E029006196E4 /* Debug */,
+				5F4953681AA0E029006196E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F4953381AA0E029006196E4 /* Project object */;
+}

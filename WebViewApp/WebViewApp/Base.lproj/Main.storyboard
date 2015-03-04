@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter URL STRING HERE" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RDw-O8-4wd">
+                                <rect key="frame" x="11" y="38" width="304" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s6A-Zr-ENK">
+                                <rect key="frame" x="0.0" y="143" width="330" height="425"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AH-6f-i3h">
+                                <rect key="frame" x="111" y="84" width="92" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="92" id="skm-W0-YWo"/>
+                                </constraints>
+                                <state key="normal" title="Go">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPressed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fju-3w-YDa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="s6A-Zr-ENK" firstAttribute="top" secondItem="8AH-6f-i3h" secondAttribute="bottom" constant="29" id="4Lo-os-eTg"/>
+                            <constraint firstItem="8AH-6f-i3h" firstAttribute="top" secondItem="RDw-O8-4wd" secondAttribute="bottom" constant="16" id="GkR-HF-Enf"/>
+                            <constraint firstItem="RDw-O8-4wd" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="18" id="VFf-N5-BAE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RDw-O8-4wd" secondAttribute="trailing" constant="-11" id="WBq-PT-C4T"/>
+                            <constraint firstItem="RDw-O8-4wd" firstAttribute="leading" secondItem="s6A-Zr-ENK" secondAttribute="leading" id="fRu-Zz-Pa1"/>
+                            <constraint firstItem="8AH-6f-i3h" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="95" id="hNP-Lz-krk"/>
+                            <constraint firstItem="s6A-Zr-ENK" firstAttribute="trailing" secondItem="RDw-O8-4wd" secondAttribute="trailing" id="xAR-zt-GAd"/>
+                            <constraint firstItem="RDw-O8-4wd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-5" id="xwh-4c-HG6"/>
+                            <constraint firstAttribute="bottom" secondItem="s6A-Zr-ENK" secondAttribute="bottom" constant="20" symbolic="YES" id="zWG-ws-zrX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="8AH-6f-i3h" id="DIh-9n-cMq"/>
+                        <outlet property="myTextField" destination="RDw-O8-4wd" id="rNW-bs-vmk"/>
+                        <outlet property="webPage" destination="s6A-Zr-ENK" id="h9D-oN-Bn2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="68" y="77"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
