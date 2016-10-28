@@ -5,50 +5,26 @@ import UIKit
 //var str = "Hello, playground"
 //NSLog("%@",str)
 
-let array = [5,2,4,7]
-linearSearch(array,2)
+var myArray :NSMutableArray = ["Hello"]
+var arrayOFArray : NSMutableArray = [myArray]
+
+// Insert more Arrays with insert or addObject
+arrayOFArray.insert("Plane", at: 0)
+arrayOFArray.add(myArray)
 
 
-func linearSearch<T: Equatable>(array: [T], _ object:T)-> Int? {
-    for (index, obj) in array.enumerate() where obj == object {
-        return index
-    }
-    return nil
+//NSArray * numbers = @[@0, @2, @3, @4, @5]
+//NSArray * sortedNumbers = [numbers sortedArrayUsingComparator:^NSComparisonResult(id first, id Second)
+//if(first > second){
+//    return NSOrderedDescending
+//}else {
+//    return NSOrderedAscending
+//}
+//return NSOorderedSame
+
+func sortFunc(num1: Int, num2: Int) -> Bool{
+    return num1 > num2
 }
 
-
-public struct Stack<T> {
-    fileprivate var  array = [T]()
-    
-    public var array = [T]()
-    
-    public var isEmpty: Bool {
-        return array.isEmpty
-    }
-    
-    public var count: Int {
-        return array.count
-    }
-    
-    public mutating func push(_ element: T) {
-        array.append(element)
-    }
-    
-    public mutating func pop() -> T? {
-        return array.popLast()
-    }
-    
-    public func peek() -> T? {
-        return array.last
-    }
-}
-
-extension Stack: Sequence {
-    public func makeIterator() -> AnyIterator<T> {
-        var curr = self
-        return AnyIterator {
-            -> T? in
-            return curr.pop()
-        }
-    }
-}
+let numbers = [0, 10, 30, 7, 6,9]
+let sortedNumbers = sorted(numbers,sortFunc(num1: Int, num2: Int),
