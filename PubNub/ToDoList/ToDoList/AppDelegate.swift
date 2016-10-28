@@ -7,12 +7,38 @@
 //
 
 import UIKit
+import PubNub
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, PNObjectEventListener {
 
     var window: UIWindow?
-
+    lazy var client: PubNub = {
+        let config = PNConfiguration(publishKey: "pub-c-e97ea572-f4aa-46e6-8c2c-4b223cc7d107",
+                                   subscribeKey: "sub-c-509ff81c-8fc4-11e6-bb6b-0619f8945a4f")
+        let pub = PubNub.clientWithConfiguration(config)
+        return pub
+    }()
+    
+    override init(){
+        super.init()
+        client.addListener(self)
+    }
+    
+    func client(_ client: PubNub, didReceive status: PNStatus) {
+        if status.isError{
+            showAlert(error: status.isError.description)
+        }
+    }
+    
+    func showAlert(error:String)  {
+        let alertController = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
+        let OKAction = UIAlertAction(title:"OK", style:.default, handler:nil)
+        alertController.addAction(OKAction)
+        self.window?.rootViewController?.present(alertController, animated: true, completion: nil )
+        
+        
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
