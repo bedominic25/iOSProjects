@@ -32,17 +32,20 @@
 
 - (IBAction)btnSpin:(id)sender {
     
-    
-    [self.view addSubview:_icon];
     _icon.alpha = 0.0;
-
     
     [UIView animateWithDuration:5.0
                           delay:0.0
                         options:UIViewAnimationOptionCurveEaseIn
                      animations:^{
                          _icon.alpha = 1.0;
+                         
                      } completion:NULL];
+
+    
+    [self.view addSubview:_icon];
+
+    
     
     }
 @end
